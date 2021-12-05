@@ -1,0 +1,32 @@
+/* 
+Como funciona CSS?
+
+Especifidad: establece como de especifico es un selector para saber que estilo aplica
+
+el calculo se realiza con la siguiente formula:
+    Etiquetas y pseudoelementos  001
+    clases, atributos y pseudoclases 010
+    ids 100
+    Estilos de linea 1000
+    !important GANA A TODO    no usar porque  de nada sirve la especifidad
+
+    pero como evitar equivorcarnos?: siempre usar clases y no usar !important
+
+Cascada-> Fucniona siempre que la especifidad sobre el elemento sea la misma
+
+Herencia-> es la capacidad que tienen algunos elementos de heredad algunas propiedades 
+de sus elementos contenedores (padres, abuelos, etc)
+-colores y fuentes se heredan
+-los enlaces no heredan
+--para frozar la herencia se usa 
+
+            propiedad:inherit
+--para no heredad se usa
+
+            propiedad:initial
+
+*/
+
+h1{
+    background-color:black;
+}

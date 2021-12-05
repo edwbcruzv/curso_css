@@ -1,0 +1,79 @@
+/* 
+SELECTORES
+
+selectores simples
+    selectores elementales
+        selector universal -> * , selecciones todo el documento
+        selector de tipo o etiqueta -> nombre de la etiqueta, h1,body,p,li,a,li,ul. etc.
+*/
+
+
+
+/* ***************SELECTORES DE ATRIBUTO************** */
+        /* id -> id del elemento
+        clase -> clase del elemento */
+/* selector de id */
+#title{
+    background-color: blue;
+}
+
+/* selector de clase */
+.parrafo{
+    background-color: blueviolet;
+}
+/* ******************OTROS ATRIBUTOS*********************** */
+            /* [atributo]
+            [atributo=valor]
+            [atributo*=valor] principio,medio, o final
+            [atributo^=valor] tiene que estar al principio
+            [atributo$=valor] tiene que estar al final
+            [atributo|=valor] un poco mas general */
+[href]{
+    background-color: darkkhaki;
+}
+
+/* tiene que ir aqui porque si se pone mas arriba no sirve, porque el archivo es en cascada */
+[href="http://www.facebook.com"]{
+    background-color: rgb(2, 0, 100);
+}
+
+[href^="para"]{
+    background-color: rgb(98, 235, 144);
+}
+
+[href*="rock"]{
+    background-color: rgb(206, 153, 128);
+}
+
+
+[href$="ago"]{
+    background-color: rgb(192, 92, 92);
+}
+
+/* casi mejor que las anteriores */
+[lang|="es"]{
+    background-color: rgb(181, 214, 198);
+}
+
+
+/* ***********************SELECTORES COMPUESTO******************** */
+    /* selectores agupados,  para evitar repetir el mismo estilo para varios
+     selectores combinadores              -> no se recomienda bajar de nivo, solo usar dos elementos
+         selector descendente                   -> selecciona un elemento dentro de otro
+         selector de hermano siguiente +         -> selecciona al hermano siguiente adyacente
+         selector de hermanos siguiente ~        ->selecciona a todos los hermanos siguiente
+         selector  de hijo directo >             -> selecciona SOLO los hijos directos
+    
+         pseudoclases-pseudoelementos */
+
+.text,.text2,.text4{
+    background-color: rgba(129, 173, 59, 0.548);
+}
+
+.text1,.text5{
+    background-color: rgb(139, 61, 61);
+}
+
+.text3{
+    background-color: darkslateblue;
+}
