@@ -1,0 +1,44 @@
+/*
+    outline es la propiedad que nos permite dibujar un borde por fuera 
+    del modelo de caja.
+    es un shorthand que engloba
+        outline-width: controla el ancho del outline
+        outline-style: controla el estilo del outline
+        outline-color: controla el color del outline
+
+    tiene las mismas propiedades y sintaxis que border, pero con 
+    algunas diferencia.
+        no ocupa sitio, ya que no forma parte del box-model
+        no se puede redondear
+        no se pueden controlar los lados de forma independiente
+
+    tambien cuenta con la propiedad outline-offset, que tambien nos 
+    permite aumentar o disminuir la distancia del outline en relacion 
+    a la caja ala que pertenece.
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+    color: aquamarine;
+}
+
+.border,.outline{
+    background-color: darkolivegreen;
+    width: 100px;
+    padding: 10px 25px;
+    margin: 50px 100px;
+
+}
+
+.border{
+    border: 2px solid chocolate;
+}
+
+.outline{
+    
+    border: 10px solid chocolate;
+}

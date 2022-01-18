@@ -1,0 +1,76 @@
+/*
+    width: Es el ancho de un Elemento de Bloque
+
+    height: es la altura de un elemento de bloque
+
+
+    Margin:
+        Es la propiedad que nos permite generar espacio entre elemento
+        Es un shorthand (propiedad abreviada) que controla los 4 lados
+        posibles a los que da margenes
+
+
+        margin-top: margen superior
+        margin-right: margen derecho
+        margin-bottom: margen inferior
+        margin-left: margen izquierdo
+        
+
+        admite hasta 4 valores que van en el orden de las manesillas del reloj
+
+        4 valores -> margin: top right buttom left;
+        3 valores -> margin: top left/right buttom;
+        2 valores -> margin: top/buttom left/right;
+        1 valores -> margin: top/right/buttom/left;
+
+*/
+
+
+
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: blueviolet;
+
+
+}
+
+.block{
+    background-color: aqua;
+    /*a los elementos de bloque si se pueden dar medidas*/
+    width: 200px; /*ancho de 200 px*/
+    height: 100px; /*alto de 100 px*/
+    /*margin: 100px; /*100 px en los 4 lados*/
+    /*margin: 100px 50px; /*100 px arriba y abajo, y 50 px a los lados */
+    margin: 100px 50px 10px 200px;   /*  top right buttom left */
+}
+
+.title{
+    background-color: aliceblue;
+    height: 50px;
+
+    width: 180px;
+    /*para que lo de abajo funcione debe de existir un ancho*/
+    /*y solo se va para un solo lado*/
+    margin-left: auto; /*se pega automaticamente a la der(rellena la izq)*/
+    /*margin-right: auto; /*se pega automaticamente a la izq(rellena la der)*/
+
+    /*si los dos estan habilitados se centra*/
+}
+
+.inline{
+    background-color: rgb(221, 60, 60);
+    color: inherit;
+    /*no se pueden dar medidas a elementos de linea*/
+    /*por lo tanto lo de abajo no funciona*/
+    width: 200px;
+    height: 100px;
+    /*No funciona para margenes verticales*/
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    /*Si funciona en margenes horizontales*/
+    margin-left: 10px; /*Izq*/
+    margin-right: 20px; /*der*/
+}

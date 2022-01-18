@@ -1,0 +1,42 @@
+/*
+    Decimos que se desvorda un contenido cuando la caja es pequeña que el contenedor
+
+    overflow: es la propiedad que controla que debe de hacer la caja cuando su contenido se
+    desborda del contenedor.
+    es un shorthand que engloba everflow-x y overflow-y.
+    tiene 4 posibles valores:
+        visible -> es el valor por defecto.
+        hidden-> el contenido que se desvorda no se vera. si se aplica la
+            propiedad a un solo eje, el otro se pondra automaticamente en el valor sroll.
+        scroll -> Apareceran barras de scroll en el caso de que hicieran falta.
+        auto -> Se pondran barras de scroll donde hagan falta.
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+    color:goldenrod;
+    margin: 0;
+
+}
+
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: darkmagenta;
+    width: 300px;
+    height: 300px;
+    color: black;
+    /* overflow-y: scroll; */ 
+    /* overflow-y: auto; barras de scroll automaticas */
+
+    overflow: auto; /*el mas comun*/
+}
+
+.text{
+    width: 350px; /*hacemos debordar el texto en el eje x */
+}

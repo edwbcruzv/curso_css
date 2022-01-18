@@ -1,0 +1,36 @@
+/*          important LE GANA A TODO Y NO SE USA
+
+    cascada -> Funciona siempre que la especificidad sobre el elemento sea la misma
+    
+    herencias -> Es la capacida que tienen algunos elementos  de heredad algunas 
+                propiedades de sus elementos contenedores (padres, abuelos, etc.)
+
+
+*/
+
+body{
+    background-color: rgb(56, 56, 56);
+}
+
+.title{
+     color: chocolate;
+     font-size: 10px;
+}
+
+
+.text{
+    color:darkred;
+}
+
+.link{
+    color: inherit; /*palabra clave para heredar*/
+}
+
+.list{
+    color: darksalmon;
+}
+
+.list-item-extra{
+    color: initial; /*Palabra clave para evitar la herencia*/
+}
+

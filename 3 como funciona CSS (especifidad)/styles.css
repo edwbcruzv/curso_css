@@ -8,7 +8,7 @@ el calculo se realiza con la siguiente formula:
     clases, atributos y pseudoclases 010
     ids 100
     Estilos de linea 1000
-    !important GANA A TODO    no usar porque  de nada sirve la especifidad
+    !important GANA A TODO    no usar porque rompe la especifidad
 
     pero como evitar equivorcarnos?: siempre usar clases y no usar !important
 

@@ -1,0 +1,26 @@
+/*colapsado de margenes verticales,
+    se suelen traslapar, por lo tando, es recomendale ir empujando 
+    las cajas hacia abajo.
+*/
+body{
+    background-color: black;
+}
+
+.header{
+    background-color: crimson;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.box-1,.box-2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: darkseagreen;
+    width: 300px;
+    height: 300px;
+}
+
+.box-2{
+    margin-top: 20px;
+}
