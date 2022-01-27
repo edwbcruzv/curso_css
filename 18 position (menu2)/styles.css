@@ -1,0 +1,43 @@
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+body{
+    margin: 0;
+    background-color: darkgrey;
+    /*padding-top: 60px; /*evitar que el contenido de body no este debajo de menu*/
+}
+
+
+
+
+.header{
+    text-align: center;
+    background-color: darkgreen;
+    color: brown;
+    position: sticky; 
+    top: 0;/*se queda pegado el menu*/
+}
+
+
+.menu{
+    position: sticky;
+    top: 0;
+}
+
+article{
+    outline: 3px solid red;
+}
+
+.article-title{
+    position: sticky;
+    top: 0;
+    background-color: darkgoldenrod;
+    margin: 0;
+}

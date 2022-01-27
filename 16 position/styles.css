@@ -1,0 +1,200 @@
+/*
+    La propiedad position de CSS especifica cómo un elemento es
+    posicionado en el documento. 
+    Las propiedades top, right, bottom,
+    y left determinan la ubicación final de los elementos posicionados.
+    --------------------------------------------------------------
+    |                           Teoria                           |
+    --------------------------------------------------------------
+    Un elemento posicionado es un elemento cuyo valor computado de 
+    position es relative, absolute, fixed, o sticky. (En otras palabras, 
+    cualquiera excepto static).
+    --------------------------------------------------------------
+    Un elemento posicionado relativamente es un elemento cuyo valor 
+    computado de position es relative.
+    top y bottom -> especifican el desplazamiento vertical desde 
+    su posición original.
+    left y right-> especifican su desplazamiento horizontal.
+    --------------------------------------------------------------
+    Un elemento posicionado absolutamente es un elemento cuyo valor 
+    computado de  position es absolute o fixed. Las propiedades top,
+    right, bottom, y  left especifican el desplazamiento desde los 
+    bordes del bloque contenedor del elemento. (El bloque contenedor 
+    es el ancestro relativo al cual el elemento está posicionado). 
+    Si el elemento tiene márgenes, se agregarán al desplazamiento. 
+    el elemento establece un nuevo contexto de formato de bloque
+    para su contenido.
+    --------------------------------------------------------------
+    Un elemento posicionado fijamente es un elemento cuyo valor de  
+    position computado es sticky. Es tratado como un elemento 
+    posicionado relativamente hasta que su bloque contenedor cruza un 
+    límite establecido (como por ejemplo dando a top cualquier valor 
+    distinto de auto), dentro de su flujo principal (o el contenedor 
+    dentro del cual se mueve), desde el cual es tratado como "fijo" 
+    hasta que alcance el borde opuesto de su bloque contenedor.
+    --------------------------------------------------------------
+    |                       Terminos                             |
+    --------------------------------------------------------------
+    flujo de renderizado -> por norma general los elementos se dibujan
+        de izquierda a derecha y de arriba hacia abajo.
+        el punto 0,0 de los elementos, por norma general, es la 
+        esquina superior izquierda.
+
+    espacio reservado -> es el espacio que tiene un elemento asignado
+        en el navegador
+    
+    elemento posicionado -> esto significa que el elemento tiene la
+        propiedad position con un valor distinto de "static", que es 
+        el valor que tiene esta propiedad por defecto.
+        
+    stackin context -> contexto de apilamiento. es el orden en el que
+        se apilaran las cajas que se superponen.
+    --------------------------------------------------------------
+    |                   valores de position                      |
+    --------------------------------------------------------------
+
+    Al posicionar un elemento se habilitan 5 propiedades que podremos 
+    utilizar para mover los elementos en los 3 ejes.
+
+    top -> el elemento se movera desde la parte superior la distancia 
+    que le hayamos asignado
+
+    bottom -> el elemento se movera desde la parte de abajo la distancia 
+    que le hayamos asignado
+
+    right -> el elemento se movera desde la parte derecha la distancia 
+    que le hayamos asignado
+
+    left -> el elemento se movera desde la parte izquierda la distancia 
+    que le hayamos asignado
+
+    z-index -> nos permite mover el elemento en el contexto de aplilamiento
+
+    NOTA: si a un elemento le declaramos la propiedad top y/o left, las
+    propiedades bottom y/o right no funcionaran
+
+    Posibles valores que le podemos dar a position:
+
+    static -> valor por defecto de un elemento. el elemento no esta
+        posicionado por lo cual no podremos moverlo.
+
+    relative -> el elemento mantendra su posicion y medidas en el flujo 
+        de renderizado y mantendra su espacio reservado.
+        si lo movemos lo hara usando su posicion en el html como punto 
+        de referencia.
+
+    absolute -> el elemento perdera sus medidas y su espacio reservado.
+        si lo movemos usara el elemento padre posicionado como referencia.
+        sino tiene ninguno, usara el elemento html de referencia.
+
+    fixed -> el elemento perder sus medidas y su espacio reservado.
+        si lo movemos usara el elemento html de referencia, y ademas se
+        quedara fijo en esa posicion aunque hagamos scroll.
+
+    sticky -> es una mezcla de position relative y fixed.
+        con este tipo de posicionamiento los valores top, left, bottom 
+        y right no sirven para mover el elemento, sino para indicarle en que
+        punto pasara a tener un comportamiento de posicionamiento fixed,
+        hasta llegar a ese punto se comportara como si tuviera relative.
+    --------------------------------------------------------------
+
+
+
+*/
+
+/* ---------------------------relative------------------------------- */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+/* .box{
+    width: 100px;
+    height: 100px;
+} */
+
+/* .box-1{
+    background-color: blueviolet;
+
+    position: relative;
+    left: 100px;
+    top: 100px;
+} */
+
+
+/* .box-2{
+    background-color: cyan;
+    position: relative;
+    left: 100px;
+} */
+
+/* ---------------------------absolute------------------------------- */
+
+/* .box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    position: relative;
+}
+
+.box-3{
+    background-color: blueviolet;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+.box-4{
+    background-color: cyan;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    
+} */
+
+/* ---------------------------relative------------------------------- */
+
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    position: relative;
+}
+
+.box-3{
+    background-color: blueviolet;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+.box-4{
+    background-color: cyan;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    
+}
+
+/* ---------------------------relative------------------------------- */
+
+
+
+/* ---------------------------relative------------------------------- */

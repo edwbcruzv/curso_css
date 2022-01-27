@@ -1,0 +1,53 @@
+/*
+    Una pseudoclase CSS es una palabra clave que se añade a los selectores y 
+    que especifica un estado especial del elemento seleccionado.
+    
+    selector:pseudoclase { propiedad: valor; }
+
+    Las pseudoclases, junto con los pseudoelementos, permiten 
+    aplicar un estilo a un elemento no sólo en relación con el 
+    contenido del árbol de documento, sino también en relación
+    a factores externos como el historial del navegador (:visited, por ejemplo), 
+    el estado de su contenido (como :checked en algunos elementos de formulario), 
+    o la posición del ratón (como :hover que permite saber si el ratón está encima de un elemento o no).
+
+    :active
+    :checked
+    :default
+    :dir()
+    :disabled
+    :empty
+    :enabled
+    :first
+    :first-child
+    :first-of-type
+    :fullscreen
+    :focus
+    :hover
+    :indeterminate
+    :in-range
+    :invalid
+    :lang()
+    :last-child
+    :last-of-type
+    :left
+    :link
+    :not()
+    :nth-child()
+    :nth-last-child()
+    :nth-last-of-type()
+    :nth-of-type()
+    :only-child
+    :only-of-type
+    :optional
+    :out-of-range
+    :read-only
+    :read-write
+    :required
+    :right
+    :root
+    :scope (en-US)
+    :target
+    :valid
+    :visited
+*/

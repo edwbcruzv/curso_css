@@ -1,0 +1,24 @@
+/*
+    Al igual que las pseudo-classes, los pseudo-elementos se añaden 
+    a los selectores, pero en cambio, no describen un estado especial 
+    sino que, permiten añadir estilos a una parte concreta del documento.
+
+    selector::pseudo-elemento { propiedad: valor; }
+
+    De vez en cuando se utilizan dos puntos dobles (::) 
+    en vez de solo uno (:). Esto forma parte de CSS3 y de 
+    un intento para distinguir pseudo-elementos de pseudo-clases.
+
+    ::after
+    ::before
+    ::first-letter
+    ::first-line
+    ::selection
+    ::backdrop
+    ::placeholder 
+    ::marker 
+    ::spelling-error 
+    ::grammar-error (en-US) 
+
+    
+*/

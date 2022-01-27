@@ -1,0 +1,61 @@
+/* 
+    Las medidas en CSS se pueden agrupar en 2, absolutas y relativas
+
+    Las medidas absolutas NO CAMBIAN y siempre mantendran su tamaño independientemente
+    del dispositivo o la interaccion del usuario.
+    LA mas usada es px (pixeles) cuya medida es 1/96 de pulgada, pero existen otras como:
+
+        cm:centimetros
+        mm:milimetros
+        Q:cuarto de milimetro
+        in:pulgadas,inches
+        pc:picas
+        pt:puntos
+
+        Las medidas relativas SIEMPREN dependen de un contexto son las que se recomienda
+        utilizar  en la gran mayoria de ocaciones porque nos van a permitir que todos 
+        los elementos escalen proporcionalmente.(responsive)
+
+        Las mas utilizadas son: em, rem, %, vmin y vmax. aunque hay otras como:
+
+            ex-> altura x de la fuente del elemento
+            ch-> la medida del ancho del glifo "0" de la letra del elemento
+            lh-> altura de la linea del elemento
+
+    --------------------------------------------------------------------------------
+    |                               em y rem
+    --------------------------------------------------------------------------------
+    rem-> corresponde a la medida de la "m" de la raiz del documento html
+                ejemplo 16px=2rem
+    em-> corresponde a la medida de la "m" del contexto donde nos encontremos
+
+    El estandar del tamaño de la fuente por defecto en la raiz del documento es 16px,
+    y NO ES RECOMENDABLE MODIFICARLOS
+    NOTA: Tanto "em" como "rem" se calculan en base a la propiedad font-size (tamaño de fuente)
+    --------------------------------------------------------------------------------
+    |                               %
+    --------------------------------------------------------------------------------
+    Cuando usamos porcentaje usamos de referencia el tamaño del contenedor y el 
+    navogador calcula ese porcentaje. esto no ocurre cuando usamos transform.
+    
+    auto-> cuando usamos auto le pedimos al navegador que calcule en funcion del 
+    espacio disponible.
+
+    height:
+        %-> cuando estamos dentro de un contenedor, este tiene que tener un alto declarado,
+        sino no podra calcular el porcentaje. si se le aplica una medida con porcentaje
+        se sustituira automaticamente por auto.
+    
+    NOTA: al usar height se debe de tener mucho cuidado. si no es necesario establecer 
+        un alto, dejar que el contenido sea el que lo decida. 
+    --------------------------------------------------------------------------------
+    |                               em y rem
+    --------------------------------------------------------------------------------
+
+    --------------------------------------------------------------------------------
+    |                               em y rem
+    --------------------------------------------------------------------------------
+*/
+
+
+

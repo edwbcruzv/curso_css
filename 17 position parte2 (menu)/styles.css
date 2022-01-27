@@ -1,0 +1,27 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: darkgrey;
+    padding-top: 60px; /*evitar que el contenido de body no este debajo de menu*/
+}
+
+.link{
+    position: fixed;
+    background-color: aqua;
+    
+}
+
+
+.header{
+    text-align: center;
+    padding: 25px 0;
+    background-color: darkgreen;
+    color: brown;
+    position: fixed; /*se queda el menu fijo*/
+    top: 0;
+    width: 100%; /*se rellena todo el menu*/
+}
